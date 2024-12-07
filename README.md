@@ -46,12 +46,12 @@ npx prisma generate client
 ```
 Add the DATABASE_URL in the .env.sample after renaming it to .env file
 
-4. **Start PostgreSQL using Docker**
+5. **Start PostgreSQL using Docker**
 ```bash
 docker-compose up -d
 ```
 
-5. **Run the application in server terminal**
+6. **Run the application in server terminal**
 ```bash
 npm run dev
 ```
