@@ -31,7 +31,7 @@ userRouter.get('/getTrains', async (req, res) => {
         })
         //console.log("trains", trains)
         res.status(200).json({
-            trains: trains
+            trains: trains,
         });
     } catch (error) {
         console.error('Error fetching trains:', error);
