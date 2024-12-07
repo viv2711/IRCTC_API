@@ -1,0 +1,15 @@
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-irctc
+    ports:
+      - "3001:5432"
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+  
+
